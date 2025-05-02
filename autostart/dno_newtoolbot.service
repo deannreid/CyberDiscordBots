@@ -1,0 +1,15 @@
+[Unit]
+Description=Bot to generate data about a tool
+After=network.target
+
+[Service]
+User=reidde
+WorkingDirectory=/home/reidde/DiscordBots
+ExecStart=/usr/bin/python3 /home/reidde/DiscordBots/newTools.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
