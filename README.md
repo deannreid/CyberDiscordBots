@@ -19,6 +19,10 @@ Generates OpenAI-powered introductions for GitHub security tools.
   * `!newtool <github_repo_url>` — generates a rich embed describing the tool.
   * `!postreadme <url>` — fetches and posts README content from GitHub.
 
+![image](https://github.com/user-attachments/assets/53a05e16-dc96-4277-985b-fb83dce0e61b)
+
+![image](https://github.com/user-attachments/assets/fd472f55-9fd6-4ce8-aa47-891c83debff0)
+
 ---
 
 ### 🩻 `Patch Tuesday Bot`
@@ -28,6 +32,8 @@ Fetches Microsoft Patch Tuesday CVEs from MSRC RSS and enriches them using NIST'
 * Posts a monthly CVE digest to a dedicated Patch Tuesday channel.
 * Embeds include CVSS scores, CWE, vector, and references.
 * Throttled to respect NIST API rate limits.
+
+![image](https://github.com/user-attachments/assets/cd5ad7fc-d694-4322-95e0-b38e2b2d2128)
 
 ---
 
@@ -42,6 +48,9 @@ Fetches exploitable CVEs from [Kevin](https://kevin.gtfkd.com/kev) feed and post
   * Threat actor info
   * Industry impact
   * Ransomware campaign use
+
+![image](https://github.com/user-attachments/assets/276b2640-57f6-4220-961e-4aae59c6f904)
+![image](https://github.com/user-attachments/assets/509f17a0-844e-4074-a40a-e850e33c8f27)
 
 ---
 
