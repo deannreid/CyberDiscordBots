@@ -12,6 +12,9 @@ OPENAI_API     = 'https://api.openai.com/v1/completions'
 # File paths for tracking posted content
 CVE_TRACK_FILE  = 'posted_cves.txt'
 NEWS_TRACK_FILE = 'posted_news.txt'
+PATCHTUES_TRACK_FILE = "msft_ptues_cves.txt"
+
+
 
 # Discord Channel IDs (replace with actual values)
 
