@@ -135,6 +135,7 @@ async def fncHandleAlerts():
     server.setblocking(False)
 
     loop = asyncio.get_running_loop()
+    print(f"\U0001f4e1 Listening for alerts on socket: {discrdConfig.SOCKET_PATH}")
 
     while True:
         client, _ = await loop.sock_accept(server)
@@ -142,6 +143,7 @@ async def fncHandleAlerts():
         client.close()
         try:
             alert = json.loads(data.decode())
+            print("\U0001f4e5 Alert received via socket. Dispatching to Discord...")
             await fncSendWazuhAlert(alert)
         except Exception as e:
             await fncSendStatusUpdate("\u274c Failed to process alert", str(e))
