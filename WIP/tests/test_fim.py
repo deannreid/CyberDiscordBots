@@ -1,11 +1,8 @@
-# test_wazuh_alert.py
-
 import asyncio
 from datetime import datetime
-from wazuhRunner import fncSendWazuhAlert, bot  # ✅ Correct imports
-import discrdConfig  # ✅ Use the correct config module
+from wazuhRunner import fncSendWazuhAlert, bot
+import discrdConfig
 
-# ✅ Sample test alert
 alert = {
     "agent": "XHSMERLINUKN01-NPD_TEST",
     "rule": "FIM: Unauthorized File Change",
@@ -29,5 +26,4 @@ async def on_ready():
     await asyncio.sleep(3)
     await bot.close()
 
-# ✅ Start bot
 asyncio.run(bot.start(discrdConfig.DISCORD_APIKEY))

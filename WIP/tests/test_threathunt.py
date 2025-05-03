@@ -3,7 +3,6 @@ from datetime import datetime
 from wazuhRunner import fncSendWazuhAlert, bot
 import discrdConfig
 
-# Sample threat hunting alert
 alert = {
     "agent": "XHSMERLINUKN01-NPD",
     "rule": "Suspicious Lateral Movement Tool Detected",
@@ -24,8 +23,7 @@ alert = {
 async def on_ready():
     print(f"🎯 Bot is ready for Threat Hunting test as {bot.user.name}")
     await fncSendWazuhAlert(alert)
-    await asyncio.sleep(3)  # Wait for the message to send
+    await asyncio.sleep(3)
     await bot.close()
 
-# Run the bot with your API key
 asyncio.run(bot.start(discrdConfig.DISCORD_APIKEY))
